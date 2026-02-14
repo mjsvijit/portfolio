@@ -16,7 +16,7 @@ function ProgressBar({ label, percentage }: ProgressBarProps) {
         <span className="text-sm font-medium text-gray-800">{label}</span>
         <span className="text-xs text-gray-600">{percentage}%</span>
       </div>
-      <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+      <div className="w-full h-1 bg-gray-200 rounded-full overflow-hidden">
         <div
           className="h-full bg-yellow-500 rounded-full transition-all duration-500"
           style={{ width: `${percentage}%` }}
@@ -39,10 +39,10 @@ export default function LeftSidebar() {
 
   return (
     <div className="w-80 bg-white h-screen fixed left-0 top-0 border-r border-gray-200 z-40 flex flex-col">
-      <div className="p-6 flex-1 flex flex-col">
+      <div className="p-4 flex-1 flex flex-col gap-3">
         {/* Profile Picture */}
-        <div className="flex justify-center mb-5">
-          <div className="w-28 h-28 rounded-full bg-gray-200 overflow-hidden border-4 border-yellow-500 relative">
+        <div className="flex justify-center mb-3">
+          <div className="w-24 h-24 rounded-full bg-gray-200 overflow-hidden border-4 border-yellow-500 relative">
             <Image
               src="/images/profile_image_v2.jpg"
               alt="Profile Picture"
@@ -54,13 +54,13 @@ export default function LeftSidebar() {
         </div>
 
         {/* Name and Title */}
-        <div className="text-center mb-5">
-          <h1 className="text-xl font-bold text-gray-900 mb-1">Vijit Singh</h1>
+        <div className="text-center mb-3">
+          <h1 className="text-lg font-bold text-gray-900 mb-1">Vijit Singh</h1>
           <p className="text-gray-600 text-sm">Full Stack Developer</p>
         </div>
 
         {/* Social Media Icons */}
-        <div className="flex justify-center gap-2 mb-6">
+        <div className="flex justify-center gap-2 mb-4">
           <a
             href="mailto:vijitsinghayd@gmail.com"
             onClick={(e) => handleCopy(e, "vijitsinghayd@gmail.com", "email")}
@@ -152,7 +152,7 @@ export default function LeftSidebar() {
         </div>
 
         {/* Personal Info */}
-        <div className="mb-6 space-y-2.5">
+        <div className="mb-4 space-y-2">
           <div className="flex items-center gap-2">
             <span className="text-yellow-500 font-semibold text-xs w-20">
               Age:
@@ -188,18 +188,21 @@ export default function LeftSidebar() {
         </div>
 
         {/* Languages Section */}
-        <div className="mb-6">
-          <h3 className="text-base font-bold text-gray-900 mb-3">Languages</h3>
+        <div className="mb-4">
+          <h3 className="text-sm font-bold text-gray-900 mb-2">Languages</h3>
           <ProgressBar label="English" percentage={70} />
           <ProgressBar label="Hindi" percentage={100} />
           <ProgressBar label="Bengali" percentage={30} />
         </div>
 
-        {/* Download CV Button */}
+      </div>
+
+      {/* Footer with Download CV button - kept outside the scrollable area so it's always visible */}
+      <div className="p-4 border-t border-gray-100 bg-white">
         <Link
           href="https://drive.google.com/drive/folders/1whqNhMKq4e_b8WKLuMHIhTTkOyO3QAiB?usp=sharing"
           target="_blank"
-          className="mt-auto w-full bg-yellow-500 text-white font-semibold py-2.5 rounded-lg hover:bg-yellow-600 transition-colors flex items-center justify-center gap-2 text-sm"
+          className="w-full bg-yellow-500 text-white font-semibold py-2.5 rounded-lg hover:bg-yellow-600 transition-colors flex items-center justify-center gap-2 text-sm"
         >
           <span>DOWNLOAD CV</span>
           <svg

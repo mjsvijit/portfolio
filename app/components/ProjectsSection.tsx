@@ -28,7 +28,7 @@ function ProjectCard({
       {/* Project Image Header */}
       <div className="w-full h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center overflow-hidden relative group-hover:scale-[1.02] transition-transform duration-300">
         {image ? (
-          <Image src={image} alt={title} fill className="object-cover" />
+          <Image src={image} alt={title} fill className="object-contain" />
         ) : (
           <div className="w-full h-full bg-gradient-to-br from-blue-400 to-purple-600 flex items-center justify-center text-white text-4xl font-bold">
             {title.charAt(0)}
