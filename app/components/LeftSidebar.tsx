@@ -44,7 +44,7 @@ export default function LeftSidebar() {
         <div className="flex justify-center mb-5">
           <div className="w-28 h-28 rounded-full bg-gray-200 overflow-hidden border-4 border-yellow-500 relative">
             <Image
-              src="/images/profile_image_v2.png"
+              src="/images/profile_image_v2.jpg"
               alt="Profile Picture"
               fill
               className="object-cover object-center"

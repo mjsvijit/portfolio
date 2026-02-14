@@ -4,6 +4,8 @@ import Image, { StaticImageData } from "next/image";
 import Image1 from "@/public/gs1-icon.jpg";
 import Image2 from "@/public/indusind_logo.png";
 import Image3 from "@/public/numeropulse_icon.webp";
+import Image4 from "@/public/mpj-logo.webp"
+import Image5 from "@/public/nuvoco-logo.png"
 interface ProjectProps {
   title: string;
   description: string;
@@ -125,13 +127,43 @@ export default function ProjectsSection() {
         "Redux Toolkit",
         "Formik",
         "Yup",
-        "Node.js",
-        "Strapi",
       ],
       githubUrl: "",
       liveUrl:
         "https://play.google.com/store/apps/details?id=com.numeropulse&pcampaignid=web_share",
       image: Image3, // Update with your actual image path
+    },
+     {
+      title: "MPJ Jewellers",
+      description:
+        "Built modern online storefront for MPJ Jewellers, digitizing 78-year offline jewelry legacy using React.js and Next.js.",
+      technologies: [
+        "Next.js",
+        "React",
+        "Redux Toolkit",
+        "Formik",
+        "Yup",
+        "Google Analytics"
+      ],
+      githubUrl: "",
+      liveUrl:
+        "https://mpjjewellers.com",
+      image: Image4, // Update with your actual image path
+    },
+     {
+      title: "Nuvo Nirmaan App",
+      description:
+        "React Native app with Firebase notifications and analytics.",
+      technologies: [
+        "React Native",
+        "Redux Toolkit",
+        "Formik",
+        "Yup",
+      ],
+      githubUrl: "",
+      liveUrl:
+        "https://play.google.com/store/apps/details?id=com.nuvonirmaan",
+      image: Image5, // Update with your actual image path
     },
   ];
 

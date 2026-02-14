@@ -15,11 +15,12 @@ export default function HeroSection({ onScrollTo }: HeroSectionProps) {
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div className="space-y-6">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
-            I'm <span className="text-yellow-500">Vijit Singh</span>
+            {/* I'm */}
+             <span className="text-yellow-500">Vijit Singh</span>
           </h1>
-          <h2 className="text-4xl md:text-5xl font-bold text-yellow-500 mb-6">
+          <h4 className="text-2xl md:text-3xl font-bold text-yellow-500 mb-6">
             Full Stack Developer
-          </h2>
+          </h4>
           <p className="text-gray-600 text-lg leading-relaxed">
             Full-stack developer with 3.6 years of experience delivering
             end-to-end project solutions across frontend (Next.js, React.js,
