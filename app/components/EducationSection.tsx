@@ -57,7 +57,7 @@ export default function EducationSection() {
       description:
         "Intensive bootcamp focused on MERN stack and software engineering fundamentals.",
       achievements: [
-        "4 Full Stack Development projects completed using HTML | CSS | Javascript | Node | Express | React.js",
+        "4 Full Stack Development projects completed using React | Next.js | Node | Express | HTML | CSS | Javascript ",
         "Focused on data structures, algorithms, and collaborative projects.",
       ],
     },

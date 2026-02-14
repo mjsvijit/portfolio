@@ -52,20 +52,20 @@ export default function ExperienceSection() {
         "AI Solutions",
       ],
     },
-    {
-      role: "Full Stack Development Projects",
-      duration: "Graduated March 2022",
-      description:
-        "Completed intensive training at Masai School, building 4+ full-stack projects using the MERN stack and modern web technologies.",
-      technologies: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Node.js",
-        "Express",
-        "React.js",
-      ],
-    },
+    // {
+    //   role: "Full Stack Development Projects",
+    //   duration: "Graduated March 2022",
+    //   description:
+    //     "Completed intensive training at Masai School, building 4+ full-stack projects using the MERN stack and modern web technologies.",
+    //   technologies: [
+    //     "HTML",
+    //     "CSS",
+    //     "JavaScript",
+    //     "Node.js",
+    //     "Express",
+    //     "React.js",
+    //   ],
+    // },
   ];
 
   return (
